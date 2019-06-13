@@ -1,6 +1,6 @@
 # code here!
 class School
-  attr_accesor :name, :roster
+  attr_accessor :name, :roster
 
   def initialize(name)
     @name = name
@@ -15,7 +15,7 @@ class School
   def grade
     roster.detect do |grade, names|
       if grade == level
-        return names 
+        return names
       end
     end
   end
