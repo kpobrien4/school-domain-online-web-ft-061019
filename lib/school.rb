@@ -12,7 +12,7 @@ class School
       roster[grade] << student_name
   end
 
-  def grade
+  def grade(grade)
     roster.detect do |grade, names|
       if grade == level
         return names
@@ -24,7 +24,7 @@ class School
     hash = {}
 roster.each do |grade, names|
   hash[grade] = names.sort
-end
+  end
 hash
   end
 
